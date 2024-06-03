@@ -1,10 +1,4 @@
-/** @type {import('next').NextConfig} */
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
+// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -16,11 +10,8 @@ const nextConfig = {
     AUTH0_CLIENT_ID: process.env.AUTH0_CLIENT_ID,
     AUTH0_CLIENT_SECRET: process.env.AUTH0_CLIENT_SECRET,
   },
-  webpack: (config) => {
-    config.resolve.modules.push(path.resolve(__dirname, 'src'));
-    return config;
-  },
 };
 
 export default nextConfig;
+
   
