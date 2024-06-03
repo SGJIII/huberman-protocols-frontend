@@ -1,4 +1,3 @@
-// src/pages/request/index.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import styles from './Request.module.css';
@@ -83,4 +82,3 @@ const RequestProtocol = () => {
 };
 
 export default RequestProtocol;
-
