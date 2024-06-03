@@ -1,8 +1,7 @@
-// frontend/src/pages/request/index.js
+// src/pages/request/index.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import styles from './Request.module.css';
-import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 
 const RequestProtocol = () => {
   const [episodeId, setEpisodeId] = useState('');
@@ -83,4 +82,5 @@ const RequestProtocol = () => {
   );
 };
 
-export default withPageAuthRequired(RequestProtocol);
+export default RequestProtocol;
+
